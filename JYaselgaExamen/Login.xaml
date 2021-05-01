@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JYaselgaExamen.MainPage">
+
+    <StackLayout>
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+
+        <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+            <Label Text="Registro Estudiantes" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+        </Frame>
+
+        <Label Text="Ingrese datos para iniciar" HorizontalTextAlignment="Center" TextColor="Black" FontSize="20" Padding="15"/>
+        <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" FontSize="22"/>
+        <Entry x:Name="txtClave" Placeholder="Ingrese clave" FontSize="22" IsPassword="True"/>
+
+        <Button x:Name="btnIngresar" Text="Ingresar" FontSize="20" TextColor="White" BackgroundColor="#2196F3" CornerRadius="50" 
+                 Clicked="btnIngresar_Clicked"/>
+        
+        
+
+    </StackLayout>
+
+</ContentPage>

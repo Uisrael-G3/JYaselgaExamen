@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JYaselgaExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="70"/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Frame BackgroundColor="#0A72B2" Padding="15" CornerRadius="0">
+                    <Label Grid.Row="0" Grid.Column="0" x:Name="lblUsuario" TextColor="White" VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center" FontSize="15"/>
+                </Frame>
+
+                <BoxView Grid.Row="1" Grid.Column="0" Color="#2196F3"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Ingresar Nombre" TextColor="White" VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center" FontSize="18"/>
+
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtNombre" FontSize="20" TextColor="Black"/>
+
+
+
+                <BoxView Grid.Row="2" Grid.Column="0" Color="#2196F3"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Pago Inicial" TextColor="White" VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center" FontSize="18"/>
+
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtPagoinicial" Keyboard="Numeric" FontSize="20" TextColor="Black"/>
+
+
+
+                <BoxView Grid.Row="3" Grid.Column="0" Color="#2196F3"/>
+                <Label Grid.Row="3" Grid.Column="0" Text="Pago Mensual" TextColor="White" VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center" FontSize="18"/>
+
+                <Button Grid.Row="3" Grid.Column="1" x:Name="btnCalcular" Text="Calcular" 
+                        BackgroundColor="#0F61A2" TextColor="White" FontSize="15" Clicked="btnCalcular_Clicked" />
+                
+
+                <Label Grid.Row="4" Grid.Column="0" x:Name="txtTotal"  TextColor="White" VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+
+                <Button Grid.Row="4" Grid.Column="1" x:Name="btnGuardar" Text="Guardar" 
+                        BackgroundColor="Green" TextColor="White" FontSize="15" CornerRadius="50" Clicked="btnGuardar_Clicked" />
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
